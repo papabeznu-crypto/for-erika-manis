@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website romantis untuk Erika - Sweet & Cute Purple Theme">
+    <title>Untuk Erika 💜</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Untuk</h1>
+            <div class="name-highlight">Erika</div>
+            <p class="subtitle">Seseorang yang istimewa 💜</p>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section id="reasons">
+        <div class="container">
+            <h2 class="section-title">Halooo Erikaa!</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Cantik</h3>
+                    <p>Kecantikanmu yang luar biasa selalu membuat hatiku berdebar. Setiap senyummu adalah keajaiban
+                        yang membuatku terpesona.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Pintar</h3>
+                    <p>Kecerdasanmu membuatku kagum. Setiap percakapan denganmu selalu menarik dan membuatku ingin terus
+                        belajar bersamamu.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Baik Hati</h3>
+                    <p>Kebaikan hatimu yang tulus adalah hadiah terindah. Caramu memperlakukan orang lain dengan penuh
+                        kasih sayang membuatku jatuh cinta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <div class="container">
+            <h2 class="section-title">Kenangan Kita</h2>
+            <div class="quiz-container">
+                <div class="quiz-game">
+                    <h3>Berlari Bergandengan Tangan 💕</h3>
+                    <p class="mb-3">Meski hanya dibatasi kacamata, kita tetap bisa saling berlari mendekat. Klik tombol
+                        untuk melihat keajaiban cinta kita!</p>
+
+                    <div class="game-canvas">
+                        <div class="player" id="player1">👧</div>
+                        <div class="obstacle">👓</div>
+                        <div class="player" id="player2">🧑</div>
+                        <div id="connectionLine"></div>
+                    </div>
+
+                    <div class="game-controls">
+                        <button class="btn" id="runBtn">
+                            <i class="fas fa-running"></i> Berlari Mendekat
+                        </button>
+                        <button class="btn" id="holdHandsBtn">
+                            <i class="fas fa-hands-holding"></i> Raih Tanganku
+                        </button>
+                        <button class="btn" id="resetBtn">
+                            <i class="fas fa-redo"></i> Ulangi
+                        </button>
+                    </div>
+
+                    <div class="game-status" id="gameStatus">
+                        Tidak ada yang bisa memisahkan kita, bahkan kacamata sekalipun! 💜
+                    </div>
+                    <div class="game-message" id="gameMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section id="message">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="text-center">
+                    <h2 class="mb-3" style="color: var(--dark-purple);">Pesan Untukmu</h2>
+                    <p style="font-size: 1.2rem; line-height: 2; color: var(--deep-purple);">
+                        Erika, kamu adalah seseorang yang sangat istimewa bagiku.
+                        <br><br>
+                        Meskipun mungkin kita dipisahkan oleh jarak atau hal-hal lainnya seperti kacamata yang
+                        memisahkan kita dalam permainan di atas,
+                        tapi perasaanku padamu tetap nyata dan tulus.
+                        <br><br>
+                        Kecantikanmu, kepintaranmu, dan kebaikan hatimu membuat hari-hariku lebih berarti.
+                        <br><br>
+                        Terima kasih sudah menjadi bagian dari hidupku. 💜
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Dibuat dengan <span class="footer-heart">❤️</span> untuk Erika</p>
+        <p>© 2025 - Kenangan Kita</p>
+    </footer>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="play-btn" id="playBtn">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="music-info">
+            <div>🎵 Penjaga Hati</div>
+        </div>
+    </div>
+
+    <!-- Audio Element (Note: User will need to add actual audio file) -->
+    <audio id="bgMusic" loop>
+        <!-- User should add: <source src="path-to-penjaga-hati.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
