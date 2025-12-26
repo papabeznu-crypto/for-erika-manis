@@ -133,7 +133,7 @@ function initQuizGame() {
         player2.style.transform = isMobile ? 'translateY(50%) scale(1.1)' : 'translateY(50%) scale(1.2)';
 
         setTimeout(() => {
-            gameStatus.textContent = '👓 Terhalang kacamata... tapi masih bisa saling melihat! 💜';
+            gameStatus.textContent = 'Kamu akan selalu aku kagumi! 💜';
             gameMessage.textContent = 'Klik "Raih Tanganku" untuk melampaui batas!';
         }, 2000);
     });
