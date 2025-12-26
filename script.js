@@ -172,7 +172,7 @@ function initQuizGame() {
         setTimeout(() => {
             gameStatus.textContent = '💕 Berhasil! Kita bergandengan tangan!';
             gameStatus.className = 'game-status success';
-            gameMessage.textContent = 'Tidak ada yang bisa memisahkan kita ketika cinta kita kuat! 💜✨';
+            gameMessage.textContent = 'Kamu akan selalu aku kagumi! 💜✨';
 
             // Add sparkle effect
             player1.style.filter = 'drop-shadow(0 0 10px #f8b4d9)';
@@ -201,7 +201,7 @@ function initQuizGame() {
         obstacle.style.opacity = '1';
         obstacle.style.transform = 'translate(-50%, -50%) scale(1)';
 
-        gameStatus.textContent = 'Tidak ada yang bisa memisahkan kita, bahkan kacamata sekalipun! 💜';
+        gameStatus.textContent = 'Kamu akan selalu aku kagumi! 💜';
         gameStatus.className = 'game-status';
         gameMessage.textContent = '';
     });
